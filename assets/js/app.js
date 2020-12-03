@@ -1,0 +1,5 @@
+window.onresize = () => {
+}
+
+window.onload = () => {
+}

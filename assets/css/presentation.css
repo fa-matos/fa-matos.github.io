@@ -1,0 +1,77 @@
+---
+---
+.backBlack {
+  background-color: #303562;
+}
+
+.backPurple {
+  background-color: #bea5bc;
+}
+
+.Presentation{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 350px;
+}
+
+.Presentation--intersection{
+  background: #bea5bc;
+  height: 50px;
+  position: relative;
+}
+.Presentation--intersection::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat;
+  height: 10px;
+  background-size: 20px 20px;
+  background-image:
+    radial-gradient(circle at 10px -5px, transparent 12px, #303562 13px);
+}
+.Presentation--intersection::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat;
+  height: 15px;
+  background-size: 40px 20px;
+  background-image:
+    radial-gradient(circle at 10px 15px, #303562 12px, transparent 13px);
+}
+
+.Presentation--icon{
+  width: 80px;
+  height: 80px;
+  margin: 40px;
+}
+
+.Presentation--content{
+  margin: 40px;
+  max-width: 500px;
+  text-align: center;
+}
+
+.Presentation--content h2{
+  color: white;
+}
+
+.Presentation--content p{
+  color: rgb(255, 247, 247);
+}
+
+.Presentation--content p strong{
+  font-weight: 600;
+}
+
+@media (min-width: 767.98px) {
+  .Presentation{
+    flex-direction: row;
+  }
+}

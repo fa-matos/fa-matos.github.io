@@ -1,0 +1,24 @@
+<header>
+
+  <div class="logo">
+    <a class="logo--link" href='{{ "/" | relative_url}}'>
+      <img class="logo--image" src='{{ "/assets/img/psychology.svg" | relative_url }}' alt="icon">
+      <div><span class="logo--top">FABÍOLA MATOS</span><span class="logo--bottom">PSICÓLOGA</span></div>
+    </a>
+  </div>
+
+  <nav>
+    <ul class="NavigationList NavigationList--horizontal">
+      {% for item in site.data.navigation %}
+        <li class="{% if page.url == item.dir %}current{% else %}unselected{% endif %}">
+          <a href="{{ item.link | relative_url }}">
+            {{ item.name }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+
+</header>
+
+<div id="side-bar"></div>
