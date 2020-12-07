@@ -1,0 +1,57 @@
+---
+---
+
+.Footer {
+  min-height: 200px;
+  background: #d9d9d9;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.Footer>section {
+  margin-top: 15px;
+}
+
+.Footer--location {
+  display: flex;
+  line-height: 15px;
+}
+
+.Footer--location>img {
+  height: 77px;
+}
+
+.Footer--left > div:last-child {
+  margin-top: 15px;
+}
+
+.Footer--middle>img {
+  height: 160px;
+}
+
+.Footer--right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.Footer--right img{
+  width: 40px;
+  height: 40px;
+}
+
+.Footer--right a{
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+.Footer--right a:hover{
+  color: var(--magenta);
+}
+
+.Footer--right span{
+  margin-left: 10px;
+}

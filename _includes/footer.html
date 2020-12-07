@@ -1,35 +1,32 @@
-  <footer>
-    <div id="footer-content">
-      <div id="navigation-footer">
-        {% for item in site.data.navigation %}
-          <div>
-            <a href="{{ item.link | relative_url }}" 
-            class="{% if page.url == item.dir %}current{% else %}unselected-dark{% endif %}">
-              {{ item.name }}
-            </a>
-          </div>
-        {% endfor %}
-      </div>
-      <div id="social-footer">
+  <footer class="Footer border">
+    <section class="Footer--left">
+      <div class="Footer--location">
+        <img src='{{ "/assets/img/flower.svg" | relative_url }}' alt="decorative flower"></svg>
         <div>
-          <a class="blog-item-link-dark row-align" href="https://www.linkedin.com/company/luanne-sales-advocacia/about/">
-            <i class="fab fa-linkedin fa-2x"></i> /luanne-sales-advocacia
-          </a>
-        </div>
-        <div>
-          <a class="blog-item-link-dark row-align" href="https://www.instagram.com/luannesalesadvocacia/">
-            <i class="fab fa-instagram fa-2x"></i> /luannesalesadvocacia
-          </a>
-        </div>
-        <div>
-          <a class="blog-item-link-dark row-align" href="https://www.facebook.com/luannesalesadvocacia">
-            <i class="fab fa-facebook-square fa-2x"></i> <span>/luannesalesadvocacia</span>
-          </a>
+          <p>Atendimento presencial (Vitória/ES)</p>
+          <p>Atendimento online</p>
         </div>
       </div>
-    </div>
-    <div id="site-author">
-      Matheus Nunes - 2020
-    </div>
-    Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+      <div>Tem alguma dúvida? Entre em contato!</div>
+    </section>
+
+    <section class="Footer--middle">
+      <img src='{{ "/assets/img/flower.svg" | relative_url }}' alt="decorative flower">
+    </section>
+
+    <section class="Footer--right">
+        <a href="https://api.whatsapp.com/send?phone=5527999689321">
+          <img src='{{ "/assets/img/whatsapp.svg" | relative_url }}' alt="WhatsApp logo">
+          <span>(27) 99968-9321</span>
+        </a>
+        <a href="mailto:fabiolarmatos@yahoo.com.br">
+          <img src='{{ "/assets/img/email.svg" | relative_url }}' alt="WhatsApp logo">
+          <span>fabiolarmatos@yahoo.com.br</span>
+        </a>
+        <a href="https://www.instagram.com/fabiolarmatos/">
+          <img src='{{ "/assets/img/instagram.svg" | relative_url }}' alt="WhatsApp logo">
+          <span>@fabiolarmatos</span>
+        </a>
+    </section>
+
   </footer>

@@ -23,6 +23,7 @@ a{
 
 :root {
   --header-height: 150px;
+  --magenta: #cb6ce6;
 }
 
 .unselected{
@@ -33,12 +34,16 @@ a{
   color: #cacaca;
 }
 
+.border{
+  border: 10px solid;
+  border-image: url('{{ "/assets/img/border.svg" | relative_url }}');
+  border-image-slice: 16;
+  border-image-repeat: round;
+  box-sizing: border-box;
+}
+
 /* Main
 _______________________________________________*/
-
-#space{
-  height: var(--header-height);
-}
 
 #side-bar{
   display: none;
@@ -487,8 +492,6 @@ ________________________________________________*/
 
 .post-text p, li{
   font-family: Georgia, Cambria, 'Times New Roman', Times, serif;
-  text-align: justify;
-  color: #292929;
   line-height: 2rem;
   font-size: 21px;
 }
@@ -501,49 +504,6 @@ ________________________________________________*/
   text-decoration: underline;
 }
 
-
-/* Footer 
-________________________________________________*/
-
-body>footer{
-  width: 100%;
-  background-color: #22242C;
-  color: #f4f7f8;
-  text-align: center;
-  bottom: 0;
-}
-
-#footer-content{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-#social-footer, #navigation-footer{
-  margin-top: 10px;
-  width: 300px;
-  height: 200px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  align-items: center;
-}
-
-#navigation-footer{
-  font-family: Georgia, Cambria, 'Times New Roman', Times, serif;
-  font-size: 24px;
-}
-
-.row-align{
-  display: flex;
-  align-items: center;
-}
-
-#site-author{
-  line-height: 100px;
-}
 
 /* Pagination
 ----------------------------------------------- */

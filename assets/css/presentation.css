@@ -1,55 +1,12 @@
 ---
 ---
-.backBlack {
-  background-color: #303562;
-}
-
-.backPurple {
-  background-color: #bea5bc;
-}
-
 .Presentation{
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: center;
   justify-content: center;
-  min-height: 350px;
-}
-
-.Presentation--intersection{
-  background: #bea5bc;
-  height: 50px;
-  position: relative;
-}
-.Presentation--intersection::before{
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-repeat: repeat;
-  height: 10px;
-  background-size: 20px 20px;
-  background-image:
-    radial-gradient(circle at 10px -5px, transparent 12px, #303562 13px);
-}
-.Presentation--intersection::after{
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-repeat: repeat;
-  height: 15px;
-  background-size: 40px 20px;
-  background-image:
-    radial-gradient(circle at 10px 15px, #303562 12px, transparent 13px);
-}
-
-.Presentation--icon{
-  width: 80px;
-  height: 80px;
-  margin: 40px;
+  min-height: 500px;
+  background: #a493ab;
 }
 
 .Presentation--content{
@@ -58,20 +15,35 @@
   text-align: center;
 }
 
-.Presentation--content h2{
-  color: white;
+.Presentation--photo {
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+}
+
+.Presentation--content blockquote{
+  color: black;
 }
 
 .Presentation--content p{
-  color: rgb(255, 247, 247);
+  text-align: initial;
 }
 
-.Presentation--content p strong{
-  font-weight: 600;
+.Presentation--content cite{
+  text-align: end;
 }
 
-@media (min-width: 767.98px) {
+@media (min-width: 991.98px) {
   .Presentation{
     flex-direction: row;
+    background-image: url('{{ "/assets/img/notepadc.jpg" | relative_url }}');
+  }
+  .Presentation--content p{
+    min-width: 450px;
+    margin-top: 120px;
+  }
+  .Presentation--photo{
+    width: 350px;
+    height: 350px;
   }
 }

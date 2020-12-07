@@ -1,23 +1,31 @@
-<header>
+<header class="border">
 
   <div class="logo">
-    <a class="logo--link" href='{{ "/" | relative_url}}'>
-      <img class="logo--image" src='{{ "/assets/img/psychology.svg" | relative_url }}' alt="icon">
-      <div><span class="logo--top">FABÍOLA MATOS</span><span class="logo--bottom">PSICÓLOGA</span></div>
+    <a href='{{ "/" | relative_url}}'>
+      Fabíola Rodrigues Matos
     </a>
   </div>
 
   <nav>
     <ul class="NavigationList NavigationList--horizontal">
       {% for item in site.data.navigation %}
-        <li class="{% if page.url == item.dir %}current{% else %}unselected{% endif %}">
-          <a href="{{ item.link | relative_url }}">
+        <li>
+          <a class="{% if page.url == item.dir %}current{% else %}unselected{% endif %}" href="{{ item.link | relative_url }}">
             {{ item.name }}
           </a>
         </li>
+        {% if forloop.last == false %}
+          <li>
+            <img class="NavigationList--img" src='{{ "/assets/img/flores-underline.png" | relative_url }}' alt="Ramo de flores decorativo">
+          </li>
+        {% endif %}
       {% endfor %}
     </ul>
   </nav>
+
+  <aside class="crp">
+    Psicóloga | CRP 16/6826
+  </aside>
 
 </header>
 
