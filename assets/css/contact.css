@@ -1,0 +1,22 @@
+.Contact {
+  background: var(--light-grey);
+  height: auto;
+  position: absolute;
+  height: 80%;
+  width: 100%;
+}
+
+.Contact>* {
+  margin-left: 40px;
+}
+
+.Contact h2 {
+  font-size: 18px;
+  color: var(--title);
+  margin: 0px 10px;
+  padding: 15px;
+}
+
+.Contact a {
+  margin-top: 15px;
+}
