@@ -31,7 +31,7 @@
 }
 
 .About--areas h3{
-  color: #b4203d;
+  color: var(--title);
   margin-left: 20px;
 }
 
