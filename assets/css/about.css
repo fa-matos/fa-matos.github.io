@@ -1,0 +1,64 @@
+---
+---
+.About {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  background: var(--light-grey);
+}
+
+.About--presentation {
+  padding: 30px;
+  line-height: 25px;
+}
+
+.About--photo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.About--photo img {
+  height: 350px;
+  width: 350px;
+}
+
+.About section:nth-child(4) {
+  padding: 25px;
+}
+
+.About--areas{
+  padding-left: 40px;
+}
+
+.About--areas h3{
+  color: #b4203d;
+  margin-left: 20px;
+}
+
+.About--flower{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.About--flower img {
+  height: 200px;
+}
+
+@media (min-width: 750px) and (max-width: 1049px) {
+  .About--photo{
+    grid-area: 1 / 1;
+  }
+  .About--areas{
+    grid-area: 2 / 2;
+  }
+}
+
+@media (max-width: 749px) {
+  .About--photo{
+    grid-area: 1;
+  }
+  .About--areas{
+    grid-area: 3;
+  }
+}
