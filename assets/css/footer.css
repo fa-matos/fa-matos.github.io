@@ -3,7 +3,7 @@
 
 .Footer {
   min-height: 200px;
-  background: #d9d9d9;
+  background: var(--light-grey);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -46,6 +46,7 @@
   display: flex;
   align-items: center;
   color: black;
+  margin: 10px;
 }
 
 .Footer--right a:hover{
@@ -54,4 +55,10 @@
 
 .Footer--right span{
   margin-left: 10px;
+}
+
+@media (max-width: 688px){
+  .Footer--middle {
+    order: 2;
+  }
 }
