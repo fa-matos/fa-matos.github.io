@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   min-height: 500px;
-  background: #a493ab;
+  background: #a493ab url('{{ "/assets/img/stripedbg.svg" | relative_url }}');
 }
 
 .Presentation--content{
