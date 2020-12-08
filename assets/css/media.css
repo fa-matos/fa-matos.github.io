@@ -1,0 +1,25 @@
+.Media {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.Media img{
+  width: 40px;
+  height: 40px;
+}
+
+.Media a{
+  display: flex;
+  align-items: center;
+  color: black;
+  margin: 10px;
+}
+
+.Media a:hover{
+  color: var(--magenta);
+}
+
+.Media span{
+  margin-left: 10px;
+}
