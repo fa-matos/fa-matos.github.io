@@ -1,5 +1,0 @@
-window.onresize = () => {
-}
-
-window.onload = () => {
-}
