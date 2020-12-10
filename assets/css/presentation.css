@@ -27,6 +27,7 @@
 
 .Presentation--content p{
   text-align: initial;
+  font-style: italic;
 }
 
 .Presentation--content cite{
