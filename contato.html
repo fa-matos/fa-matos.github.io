@@ -5,21 +5,26 @@ keywords: psicóloga, psicólogo, emocional, saúde mental, psicoterapia, orient
 description: Fabíola Rodrigues Matos Psicóloga
 custom_css: contact
 ---
-<main class="Contact">
+<main class="Contact border">
 
-  <h2>Para dúvidas ou agendamentos, entre em contato:</h2>
+  <div>
+    <h2>Para dúvidas ou agendamentos, entre em contato:</h2>
+  
+    {% include media.html %}
+  
+    <section class="Media">
+      <a href="http://lattes.cnpq.br/4706957977125388">
+        <img src='{{ "/assets/img/lattes.png" | relative_url }}' alt="WhatsApp logo">
+        <span>Currículo Lattes</span>
+      </a>
+      <a href="https://www.linkedin.com/in/fab%C3%ADola-rodrigues-matos-53b298128/">
+        <img src='{{ "/assets/img/linkedin.svg" | relative_url }}' alt="Linkedin logo">
+        <span>Linkedin</span>
+      </a>
+    </section>
+  </div>
 
-  {% include media.html %}
 
-  <section class="Media">
-    <a href="">
-      <img src='{{ "/assets/img/lattes.png" | relative_url }}' alt="WhatsApp logo">
-      <span>Currículo Lattes</span>
-    </a>
-    <a href="">
-      <img src='{{ "/assets/img/linkedin.svg" | relative_url }}' alt="WhatsApp logo">
-      <span>Linkedin</span>
-    </a>
-  </section>
+  <img src='{{ "/assets/img/contact-flower.png" | relative_url }}' alt="decorative purple flower">
 
 </main>

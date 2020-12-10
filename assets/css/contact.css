@@ -1,22 +1,33 @@
 .Contact {
   background: var(--light-grey);
-  height: auto;
-  position: absolute;
-  height: 80%;
-  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .Contact>* {
   margin-left: 40px;
+  width: 350px;
 }
 
 .Contact h2 {
   font-size: 18px;
   color: var(--title);
-  margin: 0px 10px;
-  padding: 15px;
+  padding-top: 15px;
 }
 
 .Contact a {
   margin-top: 15px;
+}
+
+.Contact>img{
+  height: 350px;
+  margin-top: 50px;
+}
+
+@media(min-width: 800px) {
+  .Contact>img{
+    margin-top: 200px;
+  }
 }
