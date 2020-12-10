@@ -6,7 +6,7 @@ html, body{
 }
 
 body {
-  font-family:  Helvetica neue, Helvetica, Arial, sans-serif;
+  font-family:  'Dosis', Helvetica neue, Helvetica, Arial, sans-serif;
   font-size: 18px;
   margin: 0;
   padding: 0;
@@ -19,10 +19,14 @@ h2 {
 
 a{
   text-decoration: none;
+  color: #830DF9;
+}
+
+a:hover {
+  color: var(--magenta);
 }
 
 li{
-  font-family: Georgia, Cambria, 'Times New Roman', Times, serif;
   line-height: 2rem;
   font-size: 21px;
 }

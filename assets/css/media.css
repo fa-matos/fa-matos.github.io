@@ -12,12 +12,7 @@
 .Media a{
   display: flex;
   align-items: center;
-  color: black;
   margin: 10px;
-}
-
-.Media a:hover{
-  color: var(--magenta);
 }
 
 .Media span{

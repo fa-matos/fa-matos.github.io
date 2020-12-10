@@ -16,6 +16,7 @@ header>nav {
 }
 
 .NavigationList{
+  font-family: Georgia, Cambria, 'Times New Roman', Times, serif;
   list-style-type: none;
   width: 100%;
   padding-left: 0;
