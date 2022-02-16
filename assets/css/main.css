@@ -1,20 +1,28 @@
 ---
 ---
+:root {
+  --header-height: 150px;
+  --deep-teal: #18454B;
+  --papaya: #FEA166;
+}
+
 html, body{
   height: 100%;
   margin: 0;
 }
 
 body {
-  font-family:  'Dosis', Helvetica neue, Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
   font-size: 18px;
   margin: 0;
   padding: 0;
   background-color: #FFFFFF;
+  color: var(--deep-teal);
 }
 
 h2 {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Didact Gothic', sans-serif;
 }
 
 a{
@@ -29,19 +37,4 @@ a:hover {
 li{
   line-height: 2rem;
   font-size: 21px;
-}
-
-:root {
-  --header-height: 150px;
-  --magenta: #cb6ce6;
-  --light-grey: #d9d9d9;
-  --title: #b4203d;
-}
-
-.border{
-  border: 10px solid;
-  border-image: url('{{ "/assets/img/border.svg" | relative_url }}');
-  border-image-slice: 16;
-  border-image-repeat: round;
-  box-sizing: border-box;
 }

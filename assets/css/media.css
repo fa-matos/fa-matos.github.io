@@ -1,20 +1,37 @@
 .Media {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
+}
+
+.Media--message {
+  font-size: 18px;
+  margin: 0;
 }
 
 .Media img{
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 20px;
 }
 
 .Media a{
+  font-size: 14px;
   display: flex;
   align-items: center;
   margin: 10px;
+  font-weight: 400;
 }
 
 .Media span{
   margin-left: 10px;
+}
+
+@media (max-width: 856px){
+  .Media {
+    align-items: center;
+    margin-top: 20px;
+  }
+  .Media--message {
+    text-align: center;
+  }
 }

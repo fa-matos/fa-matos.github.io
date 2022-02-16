@@ -1,87 +1,75 @@
-body>header {
+.main__header {
   background-color: #FFFFFF;
-  box-shadow: 0 0 3px  #000000;
+  border-bottom: #000 1px solid;
   height: var(--header-height);
   width: 100%;
-  position: relative;
-  z-index: 99999;
+  z-index: 999;
   top: 0;
+  
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-header>nav {
-  width: 100%;
-  margin-bottom: 0px;
+.logo .logo__link {
+  font-size: 32px;
   display: flex;
   justify-content: center;
 }
 
-.NavigationList{
-  font-family: Georgia, Cambria, 'Times New Roman', Times, serif;
-  list-style-type: none;
-  width: 100%;
-  padding-left: 0;
-}
-
-.NavigationList--horizontal {
+.logo .logo__text {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  align-items: flex-end;
-  max-width: 500px;
-}
-
-.NavigationList--horizontal a{
-  color: black;
-  font-size: 22px;
-  line-height: 40px;
-  font-weight: 700;
-}
-
-.NavigationList--horizontal a:hover {
-  color: var(--magenta);
-}
-
-.NavigationList--img{
-  width: 50px;
-}
-
-.logo{
-  margin-top: 20px;
   text-align: center;
-  font-family: 'Great Vibes', cursive;
-  font-size: 30px;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.logo a {
-  color: var(--magenta);
+.logo .logo__link .logo__img {
+  width: 125px;
+  height: 125px;
 }
 
-.current {
-  color: var(--magenta) !important;
+.logo .logo__link .logo__name {
+  color: var(--deep-teal);
+  font-family: 'Didact Gothic', sans-serif;
+  letter-spacing: 0.04em;
 }
 
-.crp {
-  display: none;
+.logo .logo__link .logo__profession {
+  color: var(--deep-teal);
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.3em;
+}
+
+.logo .logo__link .logo__crp {
+  color: var(--deep-teal);
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
 }
 
 @media (min-width: 991.98px) {
-  header>nav {
-    width: 500px;
-    bottom: 0;
-    position: absolute;
-    left: 70px;
-  }
   .logo{
-    font-size: 49px;
     display: inline-block;
     position: absolute;
-    right: 100px;
+    right: 80px;
   }
-  .crp {
-    display: inline-block;
-    position: absolute;
-    right: 100px;
-    bottom: 5px;
+  .logo .logo__link .logo__name {
+    font-size: 40px;
+    letter-spacing: 0.08em;
+  }
+  .logo .logo__link .logo__profession {
+    font-size: 18px;
+    letter-spacing: 0.35em;
+  }
+  .logo .logo__link .logo__crp {
+    font-size: 24px;
+  }
+  .logo .logo__link .logo__img {
+    width: 140px;
+    height: 140px;
   }
 }

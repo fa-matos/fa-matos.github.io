@@ -1,17 +1,15 @@
-<footer class="Footer border">
+<footer class="Footer">
   <section class="Footer--left">
-    <div class="Footer--location">
-      <img src='{{ "/assets/img/flower.svg" | relative_url }}' alt="Flor decorativa"></svg>
-      <div>
-        <p>Atendimento presencial (Vitória/ES)</p>
-        <p>Atendimento online</p>
+    <a class="logo__link" href='{{ "/" | relative_url}}'>
+      <img class="logo__img" src='{{ "/assets/img/logo.png" | relative_url }}' />
+      <div class="logo__text">
+        <span class="logo__name">Fabíola Matos</span>
+        <span class="logo__profession">PSICÓLOGA</span>
       </div>
-    </div>
-    <div>Tem alguma dúvida? Entre em contato!</div>
+    </a>
   </section>
 
   <section class="Footer--middle">
-    <img src='{{ "/assets/img/red-flower.png" | relative_url }}' alt="Flor decorativa">
   </section>
 
   {% include media.html %}
