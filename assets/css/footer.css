@@ -8,6 +8,7 @@
   justify-content: space-around;
   border-top: #000 1px solid;
   color: var(--papaya);
+  flex: 1;
 }
 
 .Footer a {
@@ -68,6 +69,7 @@
     display: none;
   }
   .Footer {
-    padding: 20px
+    padding: 20px;
+    min-height: auto;
   }
 }

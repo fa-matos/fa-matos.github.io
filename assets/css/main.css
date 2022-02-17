@@ -19,6 +19,12 @@ body {
   padding: 0;
   background-color: #FFFFFF;
   color: var(--deep-teal);
+  display: flex;
+  flex-direction: column;
+}
+
+body>main {
+  flex: 2;
 }
 
 h2 {

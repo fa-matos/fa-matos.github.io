@@ -1,15 +1,13 @@
 .main__header {
   background-color: #FFFFFF;
   border-bottom: #000 1px solid;
-  height: var(--header-height);
+  min-height: var(--header-height);
   width: 100%;
-  z-index: 999;
-  top: 0;
-  
-  position: relative;
+
   display: flex;
   justify-content: center;
   align-items: center;
+  flex: 1;
 }
 
 .logo .logo__link {
